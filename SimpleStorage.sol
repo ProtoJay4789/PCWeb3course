@@ -9,24 +9,24 @@ struct Person{
     string name; 
 }
 // dynamic array
-//Static size (limit size)
 Person[] public listofPeople;
 
-// Person public Myfriend = Person({favoriteNumber: 7, name: "Pat"});
 
 function store(uint256 _favoriteNumber) public{
     MyfavoriteNumber = _favoriteNumber;
     retrieve();
 }
-//Solidity will mark functions that you don't view, pure
+//Solidity will mark functions that use view, pure
 function retrieve() public view returns (uint256){
     /* View fuctons disbale updating state variables 
     Pure does the same as view fucntion plus disbale reading from state or storage */
     return MyfavoriteNumber;
 
 }
-// Will push people to array
-function addPerson(string memory _name, uint256 _favoriteNumber) public {
+/* call data,memory, storage
+ Call data is a temporary variable that cannot bemodified */
+
+function addPerson(string memory calldata _name, uint256 _favoriteNumber) public {
     listofPeople.push ( Person (_favoriteNumber, _name) );
 }
 }
