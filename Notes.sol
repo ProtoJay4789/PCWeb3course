@@ -3,11 +3,14 @@ pragma solidity ^0.8.18;
 contract Practice {
 /* 
 * Booleans are false by defualt 
+bool IlovePractice = true;
 * uint and int are 256 by default
+uint256 IlovePractice = 1;
 * Your data is always visble on the blockchain, 
  aking something public allows other smart contracts 
  to call it
-  * only int can be negative*/ 
+  * only int can be negative
+   int256*/ 
 uint MydogJimbo;
 funtion Store(uint256 _MydogJimbo) public {
 MydogJimbo = _MydogJimbo + 1;
@@ -23,4 +26,5 @@ struct person {
 str
  function retreive() publiv view returns(uint256) {
   return MydogJimbo
+}
 }
