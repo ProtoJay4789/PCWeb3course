@@ -8,13 +8,12 @@ struct Person{
     uint256 favoriteNumber;
     string name; 
 }
-// dynamic array
+// dynamic array - Can grow and Shrink
 Person[] public listofPeople;
 
 
 function store(uint256 _favoriteNumber) public{
     MyfavoriteNumber = _favoriteNumber;
-    retrieve();
 }
 //Solidity will mark functions that use view, pure
 function retrieve() public view returns (uint256){
@@ -26,7 +25,7 @@ function retrieve() public view returns (uint256){
 /* call data,memory, storage
  Call data is a temporary variable that cannot bemodified */
 
-function addPerson(string memory calldata _name, uint256 _favoriteNumber) public {
-    listofPeople.push ( Person (_favoriteNumber, _name) );
+function addPerson(string memory _name, uint256 _favoriteNumber) public {
+    listofPeople.push(Person(_favoriteNumber, name));
 }
 }
