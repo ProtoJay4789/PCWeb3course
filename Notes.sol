@@ -41,5 +41,11 @@ struct Person {
 // Static array -  Does not move
 person [3] ListOfpeople;
 
+  /* Evm can access and store information in six places; 
+  stack, memory, storage, call data, code, logs 
+  Use memory for temporary functions  or functions that need to modified later. 
+  Use storage for state variables that need to stay and be accessed ie. account balances.
+  Use calldata for arguments that should not be changed, but need to be accessed.
+  */
 }
 
