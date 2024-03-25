@@ -35,6 +35,9 @@ struct Person {
   uint256 favoriteNumber;
   string name;
 }
+// Custom Type: favorite numer is 3 and name is James.
+Person Brandon myfriend= Person(3, "Brandon");
+// Can also use Person brandon myfriend = Person{(favoriteNumber:3, String: James)};
 // dynamic array - Can grow or strink
   person[] listOfpeople; // empty  list
 // Static array -  Does not move
