@@ -1,35 +1,35 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19; 
+pragma solidity ^0.8.19; // version of Solidity
 contract Practice {
- 
+ //Variables are just placeholders for **values**
+
 // ...Booleans are false by defualt 
 bool hasfavoriteNumber;
 bool IlovePractice = true;
-// uint and int are whole numbers 
-// 256 by default unless assigned
+/* uint and int are whole numbers 
+ 256 by default unless assigned */
 uint256 IlovePractice = 1;
 //only int can be negative
    int256 FavoriteInt = -1;
  // address is 20 bytes long
   address myaddress = 0x0000000000000000000000000000000000000000;
-// bytes32 is a string of 32 bytes
+  // bytes are low-level raw data and can be dynamic
+bytes littledebbie = "Chocolate";
+// bytes32 is a (static) string of 32 bytes 
 bytes32 mystring = "hello";
-// strings are 256 bytes long
+// strings are 256 bytes long and always dynamic
 string mystring2 = "hello";
-/* Public makes it visible and usable to others. It is internal by default */
+// Public makes it visible and usable to others. It is internal by default 
 uint256 public favoriteNumber; // 0 by defualt unless assigned
 
 /* The function is storing the value of the favoriteNumber variable */
 function store(uint256 _favoriteNumber) public {
   favoriteNumber = _favoriteNumber;
-}
-
-  
+} 
 // view, pure 
 function retrieve() public view returns(uint256){
   return favoriteNumber;
 }
-
 /* Structs are custom types that can group variables
 Similar to other arrays. 0,1,2,3,4 Indexed
 [10,4,109] */
