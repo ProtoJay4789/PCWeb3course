@@ -1,9 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19; // version of Solidity
 contract Practice {
- //Variables are just placeholders for **values**
-
-// ...Booleans are false by defualt 
+ // ...Booleans are false by defualt 
 bool hasfavoriteNumber;
 bool IlovePractice = true;
 /* uint and int are whole numbers 
@@ -13,14 +11,17 @@ uint256 IlovePractice = 1;
    int256 FavoriteInt = -1;
  // address is 20 bytes long
   address myaddress = 0x0000000000000000000000000000000000000000;
-  // bytes are low-level raw data and can be dynamic
+  /* bytes are low-level raw data bytes. Can only be 
+  dynamic when a number is not specified */
 bytes littledebbie = "Chocolate";
-// bytes32 is a (static) string of 32 bytes 
+// bytes32 is a (static) fixed sized byte array of 32 bytes
 bytes32 mystring = "hello";
-// strings are 256 bytes long and always dynamic
+// strings are dynamic byte arrays
 string mystring2 = "hello";
-// Public makes it visible and usable to others. It is internal by default 
-uint256 public favoriteNumber; // 0 by defualt unless assigned
+/* Public makes it visible and usable to others outside smartcontract. 
+It is internal by default. Variables are just placeholders for values. 
+variable is set to 0 by defualt unless assigned */
+uint256 public favoriteNumber;
 
 /* The function is storing the value of the favoriteNumber variable */
 function store(uint256 _favoriteNumber) public {
