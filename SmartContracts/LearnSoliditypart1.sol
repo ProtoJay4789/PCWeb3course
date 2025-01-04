@@ -54,4 +54,4 @@ person [3] ListOfpeople;
   */
 }
 
-What up cuzzo
+What up cuzzo, appreciate you sticking with the class. Will be rerunning functions tonight at 8:30pm
