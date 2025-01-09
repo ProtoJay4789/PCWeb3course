@@ -18,7 +18,7 @@ bytes littledebbie = "Chocolate";
 bytes32 mystring = "hello";
 // strings are dynamic byte arrays
 string mystring2 = "hello";
-/* Public makes it visible and usable to others outside smartcontract. 
+/* Public makes it visible and usable to others outside of the smart contract. 
 It is internal by default. Variables are just placeholders for values. 
 variable is set to 0 by defualt unless assigned */
 uint256 public favoriteNumber;
@@ -50,8 +50,8 @@ person [3] ListOfpeople;
   stack, memory, storage, call data, code, logs 
   Use memory for temporary functions  or functions that need to modified later. 
   Use storage for state variables that need to stay and be accessed ie. account balances.
-  Use calldata for arguments that should not be changed, but need to be accessed.
+  Use calldata for arguments that should not be , but need to be accessed.
   */
 }
 
-What up cuzzo, appreciate you sticking with the class. Will be rerunning functions tonight at 8:30pm
+
